@@ -1,11 +1,12 @@
 NAME = libft
-SRCS = ft_isalpha.c \
+SRCS = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_tolower.c ft_toupper.c \
+       ft_strlen.c  ft_strlcpy.c ft_memcpy.c
 #SRCS_BONUS = 
 OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 
 CC = clang
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c99
 ARFLAGS = -rcs
 RM = rm -rf
 
